@@ -47,7 +47,7 @@ const print = (pokemon) => {
 }
 
 const search = (pokemon) => {
-    console.log(pokemon) ; 
+    console.log(pokemon); 
     const finderPoke = pokemon.filter( poke => 
     poke.name.includes(input$$.value.toLowerCase()));                
     console.log(finderPoke);
@@ -68,3 +68,6 @@ const search = (pokemon) => {
 }
 
 arrayBueno();
+
+
+

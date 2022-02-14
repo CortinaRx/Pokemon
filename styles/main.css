@@ -36,7 +36,25 @@
   gap: 0.5rem;
 }
 
-.container {
+.page-container {
+  background-color: #EB6F30;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-container-img {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,91 +68,157 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: orangered;
 }
 
-@media only screen and (min-width: 992px) {
-  .container {
+@media only screen and (min-width: 768px) {
+  .page-container-img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-.container h1 {
-  color: whitesmoke;
-  margin-top: 100px;
-  border: solid whitesmoke;
-  border-radius: 10cm;
-  width: 50%;
-  text-align: center;
+.page-container img {
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
-@media only screen and (min-width: 992px) {
-  .container h1 {
-    margin-top: 400px;
-  }
-}
-
-.textP {
-  color: whitesmoke;
-}
-
-.pokeName::first-letter {
-  text-transform: uppercase;
-}
-
-.pokeName {
-  width: 60%;
-  margin-left: 70px;
-  color: #c90f0f;
-  background-color: #adb5bd;
-  text-align: center;
-  border: #f8f4f4 solid;
-  border-radius: 10cm;
-}
-
-@media only screen and (min-width: 992px) {
-  .pokeName {
-    margin-left: 160px;
-  }
-}
-
-.divCards img {
-  /*lo que ocupa la imagen*/
-  width: 50%;
-  margin-left: 56px;
-}
-
-@media only screen and (min-width: 992px) {
-  .divCards img {
-    margin-left: 100px;
-  }
-}
-
-.divCards {
-  /*background de imagen*/
+.page-container-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-container-title h6 {
+  color: whitesmoke;
+  margin: auto;
+  font-weight: 800;
+}
+
+.page-container-title img {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .page-container-title img {
+    width: 50%;
+  }
+}
+
+.page-container-title input {
+  border-radius: 10px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 10px;
+  background-image: url("https://data.1freewallpapers.com/download/stains-paint-liquid-mixing-shades-abstraction-3840x2160.jpg");
+  background-size: contain;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-container-title input {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-container-title input {
+    width: 20%;
+  }
+}
+
+.page-container-title .btn {
+  width: 30%;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-container-title .btn {
+    width: 10%;
+  }
+}
+
+.page-container-title #pokedex {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-container-title #pokedex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.page-container-title #pokedex li {
+  margin: auto;
+  border-radius: 40px;
+  background-image: url("https://data.1freewallpapers.com/download/stains-paint-liquid-mixing-shades-abstraction-3840x2160.jpg");
+  background-size: cover;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
+  border: solid 10px darkgoldenrod;
+  margin-bottom: 20px;
 }
 
-#pokedex li {
-  margin: 20px;
+@media only screen and (min-width: 768px) {
+  .page-container-title #pokedex li {
+    width: 40%;
+  }
 }
 
-#pokedex {
-  background-color: orangered;
-  margin-top: 200px;
+@media only screen and (min-width: 992px) {
+  .page-container-title #pokedex li {
+    width: 30%;
+  }
 }
 
-ol p {
-  margin-left: 90px;
-  border-radius: 10cm;
+@media only screen and (min-width: 1200px) {
+  .page-container-title #pokedex li {
+    width: 30%;
+  }
+}
+
+.page-container-title #pokedex li h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.page-container-title #pokedex li p {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.page-container-title #pokedex li .divCards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,20 +228,32 @@ ol p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: blanchedalmond;
-  background-color: #adb5bd;
-  border: solid black;
-  width: 40%;
+  background-image: url("https://thumbs.gfycat.com/ChiefOblongAmericanindianhorse-size_restricted.gif");
+  background-size: cover;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  width: 50%;
+  height: 20vh;
 }
 
-@media only screen and (min-width: 992px) {
-  ol p {
-    color: whitesmoke;
-    margin-left: 220px;
-  }
+.page-container-title #pokedex li .divCards img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin: auto;
 }
 
-ol li {
+.page-container-title #searchPoke {
+  width: 100%;
+}
+
+.page-container-title #searchPoke li {
+  margin: auto;
+  border-radius: 40px;
+  background-image: url("https://data.1freewallpapers.com/download/stains-paint-liquid-mixing-shades-abstraction-3840x2160.jpg");
+  background-size: cover;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,135 +261,67 @@ ol li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url("https://i.pinimg.com/originals/aa/ea/27/aaea27f3e0092903fc02bd505a6a0631.gif");
-  border: #f8f4f4 solid;
-}
-
-@media only screen and (min-width: 992px) {
-  ol li {
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.div-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: orangered;
-  width: 100%;
-  height: 10rem;
+  border: solid 10px darkgoldenrod;
 }
 
-@media only screen and (min-width: 992px) {
-  .div-img {
-    height: 12rem;
+@media only screen and (min-width: 768px) {
+  .page-container-title #searchPoke li {
+    width: 40%;
+    margin-bottom: 30px;
   }
 }
 
-.div-img1 {
-  margin-top: 3rem;
-  width: 75%;
-  height: 7rem;
+@media only screen and (min-width: 992px) {
+  .page-container-title #searchPoke li {
+    width: 30%;
+  }
+}
+
+.page-container-title #searchPoke li h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.page-container-title #searchPoke li p {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.page-container-title #searchPoke li .divCards1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("https://thumbs.gfycat.com/ChiefOblongAmericanindianhorse-size_restricted.gif");
+  background-size: cover;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  width: 50%;
+  height: 20vh;
+  width: 50%;
 }
 
-@media only screen and (min-width: 992px) {
-  .div-img1 {
-    height: 30rem;
-    margin-top: 0rem;
-  }
+.page-container-title #searchPoke li .divCards1 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin: auto;
 }
 
-.pokeName1 {
-  width: 60%;
-  margin-left: 70px;
-  color: #c90f0f;
-  background-color: #adb5bd;
-  text-align: center;
-  border: #f8f4f4 solid;
-  border-radius: 10cm;
-}
-
-/* Pokemones Buscados */
-#searchpoke li {
-  margin-bottom: 100px;
-}
-
-#searchPoke {
-  width: 90%;
-}
-
-@media only screen and (min-width: 992px) {
-  #searchPoke {
-    width: 32%;
-    height: 10rem;
-    margin-top: 20px;
-    margin-bottom: 25rem;
-  }
-}
-
-#searchPoke h2::first-letter {
-  text-transform: uppercase;
-}
-
-#searchPoke h2 {
-  color: white;
-}
-
-@media only screen and (min-width: 992px) {
-  #searchPoke h2 {
-    margin-left: 160px;
-  }
-}
-
-#searchpoke li img {
-  margin-left: 150px;
-}
-
-.divCards1 {
-  margin-left: 110px;
-}
-
-@media only screen and (min-width: 992px) {
-  .divCards1 {
-    margin-left: 300px;
-  }
-}
-
-.pclass {
-  margin-left: 100px;
-  color: orangered;
-  font-size: bold;
-}
-
-@media only screen and (min-width: 992px) {
-  .pclass {
-    margin-left: 220px;
-  }
-}
-
-/*Boton */
-.btn {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  border-radius: 10cm;
-}
-
-@media only screen and (min-width: 992px) {
-  .btn {
-    margin-bottom: 80px;
-  }
-}
-
-/*Finder*/
-.finder {
-  margin-top: 30px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Load google's Roboto font*/
