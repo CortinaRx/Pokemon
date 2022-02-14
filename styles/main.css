@@ -128,6 +128,8 @@
   margin-bottom: 10px;
   background-image: url("https://data.1freewallpapers.com/download/stains-paint-liquid-mixing-shades-abstraction-3840x2160.jpg");
   background-size: contain;
+  text-decoration: none;
+  color: black;
 }
 
 @media only screen and (min-width: 768px) {
